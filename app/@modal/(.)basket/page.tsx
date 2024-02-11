@@ -9,12 +9,12 @@ import {
 } from "@/components/ui/dialog";
 import { useRouter } from "next/navigation";
 
-const BasketInterception = () => {
+const BasketInterception: React.FC = () => {
   const router = useRouter();
   const onDismiss = () => {
-    router.back()
+    router.back();
   };
-  
+
   return (
     <Dialog
       open

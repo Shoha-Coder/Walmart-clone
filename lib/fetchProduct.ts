@@ -1,6 +1,8 @@
-import { ProductContent } from "@/typings/productTypings";
+import { Product, ProductContent } from "@/typings/productTypings";
 
-const fetchProduct = async (url: string) => {
+const fetchProduct = async (
+  url: string
+): Promise<void | Product | undefined> => {
   const username = process.env.OXYLABS_USERNAME;
   const password = process.env.OXYLABS_PASSWORD;
 

@@ -7,7 +7,7 @@ import Image from "next/image";
 import AddToCart from "./AddToCart";
 import { Button } from "./ui/button";
 
-const Basket = () => {
+const Basket: React.FC = () => {
   const cart = useCartStore((state) => state.cart);
   const basketTotal = getCartTotal(cart);
   const groupped = groupBYSKU(cart);

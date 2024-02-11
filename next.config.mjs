@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "links.papareact.com",
+        hostname: "images.pexels.com",
       },
       {
         protocol: "https",

@@ -19,7 +19,12 @@ const GridOption: React.FC<Props> = ({ title, className, image }) => {
     >
       <h2 className="text-xl font-bold">{title}</h2>
       {image && (
-        <Image src={image} alt={title} layout="fill" className="object-cover opacity-20 rounded-md" />
+        <Image
+          src={image}
+          alt={title}
+          layout="fill"
+          className="object-cover opacity-20 rounded-md"
+        />
       )}
     </Link>
   );

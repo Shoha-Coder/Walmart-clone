@@ -14,7 +14,7 @@ import { useRouter } from "next/navigation";
 import { useCartStore } from "@/store";
 import { getCartTotal } from "@/lib/getCartTotal";
 
-const Header = () => {
+const Header: React.FC = () => {
   const router = useRouter();
   const cart = useCartStore((state) => state.cart);
   const total = getCartTotal(cart);

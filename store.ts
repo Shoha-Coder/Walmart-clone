@@ -1,7 +1,6 @@
 import { create } from "zustand";
 import { devtools, persist } from "zustand/middleware";
 import { Product } from "./typings/productTypings";
-// import type {} from "@redux-devtools/extension"; // required for devtools typing
 
 interface CartState {
   cart: Product[];

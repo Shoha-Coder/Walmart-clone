@@ -1,7 +1,5 @@
-import React from 'react'
+const Default = (): null => {
+  return null;
+};
 
-const Default = () => {
-  return null
-}
-
-export default Default
+export default Default;

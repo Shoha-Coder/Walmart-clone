@@ -1,6 +1,8 @@
 import { Result } from "@/typings/searchTypings";
 
-const fetchSearch = async (searchTerm: string) => {
+const fetchSearch = async (
+  searchTerm: string
+): Promise<void | Result | undefined> => {
   const username = process.env.OXYLABS_USERNAME;
   const password = process.env.OXYLABS_PASSWORD;
 
